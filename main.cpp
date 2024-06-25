@@ -13,13 +13,12 @@ int main(int argc, char** argv)
   {
       string patientLine = "";
       istringstream patientLineReader(patientLine);
-      patientLineReader.setdelimiter('\t');
-      string patientName = "";
+    int patientID = -1;
     int secondsToLive = -1;
     int treatmentTime = -1;
-      patientLineReader >> patientName;
+      patientLineReader >> patientID;
     patientLineReader >> secondsToLive;
-    patient
+    patientLineReader >> treatmentTime;
     }
   return 0;
 }
