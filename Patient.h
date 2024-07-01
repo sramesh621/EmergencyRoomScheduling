@@ -14,6 +14,8 @@ class Patient
         void setName(const string& newName);
         const int getTreatmentWindow();
         void setTreatmentWindow(const int newTreatmentWindow) throws WindowExceededError;
+        const int getSecondsToTreat();
+        void setSecondsToTreat() throws WindowExceededError;
         const Patient& operator=(const Patient& assignTo);
         ~Patient();
 };
