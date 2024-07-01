@@ -4,7 +4,8 @@ class Patient
 {
     private:    
         string name = "";
-        int s
+        int treatmentWindow = 0;
+        int secondsToTreat = 0;
     public:
         Patient();
         Patient(const Patient& copy);
