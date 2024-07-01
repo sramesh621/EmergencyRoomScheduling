@@ -2,9 +2,9 @@
 
 class Patient
 {
-    private:
-        
+    private:    
         string name = "";
+        int s
     public:
         Patient();
         Patient(const Patient& copy);
