@@ -5,5 +5,10 @@
 class PatientScheduler
 {
 private:
-    Pat
+    vector<Patient> patientList;
+public:
+    PatientScheduler();
+    PatientScheduler(const PatientScheduler& original);
+    const PatientScheduler& operator=(const& PatientScheduler copy);
+    ~PatientScheduler();
 };
