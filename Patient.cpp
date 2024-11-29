@@ -18,12 +18,22 @@ void Patient::setName(const string& newName)
     name = newName;
 }
 
-const int Patient::getTimeToLive()
+const int Patient::getSecondsToTreat()
 {
-    return timeToLive;
+    return secondsToTreat;
 }
 
-void Patient::setTimeToLive(const int newTimeToLive)
+void Patient::setSecondsToTreat(const int newSecondsToTreat)
 {
-    timeToLive = newTimeToLive;
+    secondsToTreat = newSecondsToTreat;
+}
+
+const int Patient::getTreatmentWindow()
+{
+    return treatmentWindow;
+}
+
+void Patient::setTreatmentWindow(const int newTreatmentWindow)
+{
+    treatmentWindow = newTreatmentWindow;
 }
